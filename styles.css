@@ -28,6 +28,14 @@ body {
     line-height: 45px;
 }
 
+.fixed-header {
+    position: fixed;
+    background-color: powderblue;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
 li {
     display: inline;    
     padding-left: 25px;
@@ -71,7 +79,40 @@ li {
 .actions button {
     color: white;
     background-color: #67b54b;
-    padding: 12px 14px 12px 14px;
+    padding: 12px 14px;
     border: 0;
     border-radius: 5px;
 }
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+}
+
+.vid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vid img {
+    width: 120px;
+    margin-top: 10px;
+  }
+
+.vidTxt h1 {
+    color: #025157;
+  }
+  
+  .vidTxt > p {
+    color: #343434;
+  }
+  
+  .vidTxt > form {
+    display: flex;
+  }
+  
+  .vidTxt > form p {
+    color: #025157;
+  }
