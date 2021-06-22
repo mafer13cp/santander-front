@@ -16,7 +16,8 @@ button {
 }
 
 body {
-    background-color: #fffbf7;
+    /*background-color: #fffbf7;*/
+    background-color: pink;
 }
 
 .header {
