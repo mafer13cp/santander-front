@@ -133,6 +133,15 @@ input {
   font-size: 16px;
 }
 
+.formini input {
+  border-radius: 8px;
+  border: 1px solid #b6b6b6;
+  width: 20%;
+  height: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
 .promo {
   display: flex;
   width: 70%;
@@ -412,4 +421,69 @@ input {
   font-family: "Open Sans", sans-serif;
 }
 
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  .navbar, .actions {
+    display: none;
+  }
+  main {
+    margin-top: 200px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .banner > img {
+    width: 100%;
+  }
+  .formini {
+    flex-direction: column;
+  }
 
+  .formini > div {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .formini div > input {
+    width: 80%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .vid > video {
+    width: 100%;
+  }
+
+  .promo h1 {
+    font-size: 30px;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ftext {
+    padding-left: 40px;
+    size: 20px;
+    width: 80%;
+  }
+  .fimg {
+    display: none;
+  }
+}
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+}
