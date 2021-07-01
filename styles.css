@@ -73,11 +73,12 @@ li {
 }
 
 
-.navbar {
+/* .navbar {
   width: 70%;
   text-align: center;
   color: #025157;
 }
+ */
 
 .actions {
   width: 15%;
@@ -200,18 +201,35 @@ input {
   flex: 2;
 }
 
-.contenedor {
+.carousel-item {
   flex: 2;
   width: 350px;
   background-color: #fff;
   border-radius: 10px;
   margin-right: 10px;
 }
+
+.carousel-item active{
+  flex: 2;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
 .fotoD {
   width: 350px;
   height: 350px;
 }
-.contenedor img {
+.carousel-item img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item active img {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -421,11 +439,53 @@ input {
   font-family: "Open Sans", sans-serif;
 }
 
+.comp {
+  background-color: #f9da73;
+}
+
+.espacio {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+
+.pub {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+  padding: 2%;
+}
+
+.jumbotron {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.f {
+  width: 90%;
+  margin-left: 10%;
+  justify-self: center;
+  align-self: center;
+}
+
+.card
+{
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.navbar {
+  background-color: beige;
+}
+
+
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-  .navbar, .actions {
+  /* .navbar, .actions {
     display: none;
-  }
+  } */
   main {
     margin-top: 200px;
   }
